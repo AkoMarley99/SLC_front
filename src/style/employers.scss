@@ -1,0 +1,26 @@
+.collaspible-wrapper{
+    padding-left:100px ;
+    margin-top: 50px;
+    margin-left: 50px;
+    color: black;
+    background-color: white;
+    
+    
+    width: 1000px;
+ 
+    .collapsible{
+        width: 500px;
+       
+        padding: 30px;
+        background-color: white;
+    
+        &:hover{
+           cursor: pointer;
+        }
+        
+    }
+    
+    .Collapsible__contentInner{
+    }
+
+}

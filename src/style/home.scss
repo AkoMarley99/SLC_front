@@ -1,0 +1,82 @@
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .building-teams {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 20px;
+
+    align-items: center;
+    justify-items: center;
+
+    .building-teams-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 32px;
+
+      .building-teams-p {
+        width: 300px;
+        font-size: 16px;
+        padding: 10px;
+      }
+    }
+  }
+  .why-slc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+    justify-items: center;
+
+    margin-bottom: 20px;
+    .why-slc-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 32px;
+
+      padding: 10px;
+
+      .why-slc-p {
+        width: 300px;
+        font-size: 16px;
+        padding: 10px;
+      }
+    }
+  }
+
+  .specialties-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .our-specialties {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      width: 90vw;
+
+      font-size: 30px;
+
+      .specialties {
+        display: flex;
+        justify-content: space-between;
+        .specialties-box {
+          margin: 10px;
+
+          &:hover {
+            // display: none;
+          }
+          .specialties-text {
+            display: flex;
+            justify-content: center;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
