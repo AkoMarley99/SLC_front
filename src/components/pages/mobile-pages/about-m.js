@@ -1,16 +1,15 @@
 import React from "react";
 
-import Footer from "../footer";
-import Profile from "../../../static/assets/images/Sjonathan.png";
+import Profile from "../../../../static/assets/images/Sjonathan.png";
 export default function () {
   return (
-    <div className="about-content">
-      <div className="about-wrapper">
-        <div className="about-img-wrapper">
+    <div className="about-content-m">
+      <div className="about-wrapper-m">
+        <div className="about-img-wrapper-m">
           <img
             src={Profile}
             alt="placeholder"
-            className="about-img"
+            className="about-img-m"
             style={{
               width: "300px",
               height: "300px",
@@ -19,7 +18,7 @@ export default function () {
             }}
           />
         </div>
-        <div className="about-p">
+        <div className="about-p-m">
           We offer a fresh, new approach to connecting our business partners
           with great employees. We love finding the perfect match between
           talented individuals and our remarkable clients.
@@ -43,9 +42,6 @@ export default function () {
             <li>FINDING THE PLAY IN OUR DAY</li>
           </ul>
         </div>
-      </div>
-      <div className="footer-wrapper">
-        <Footer />
       </div>
     </div>
   );

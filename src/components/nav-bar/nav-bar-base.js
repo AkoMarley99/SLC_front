@@ -4,11 +4,23 @@ import { NavLink } from "react-router-dom";
 
 import Logo from "../../../static/assets/images/SLC_logo.png";
 
-export default function () {
+export default function NavBar(props) {
+  const dynamicLink = (route, linkText) => {
+    return (
+      <div className="nav-link-wrapper">
+        <NavLink to={route} activeClassName="nav-link-active">
+          {linkText}
+        </NavLink>
+      </div>
+    );
+  };
+
   return (
     <div className="nav-wrapper">
       <div className="logo-wrapper">
-        <img src={Logo} alt="placeholder" style={{ height: "250px" }} />
+        <NavLink exact to="/" activeClassName="nav-link-active">
+          <img src={Logo} alt="placeholder" style={{ height: "250px" }} />
+        </NavLink>
       </div>
       <div className="links-wrapper">
         <div className="nav-link-wrapper">
@@ -36,16 +48,22 @@ export default function () {
         </div>
 
         <div className="nav-link-wrapper">
-          <NavLink exact to="/services" activeClassName="nav-link-active">
-            Contact
+          <NavLink exact to="/contact" activeClassName="nav-link-active">
+            Contact Us
           </NavLink>
         </div>
+        {props.loggedInStatus === "LOGGED_IN"
+          ? dynamicLink("/job-manager", "Job Manager")
+          : null}
       </div>
 
-      <div className="login-button-wrapper">
-        <NavLink exact to="/login" activeClassName="nav-link-active">
-          Login
+      <div className="login-wrapper">
+        <NavLink exact to="/login-form" activeClassName="nav-link-active">
+          <button className="loginout-buttons">Sign in</button>
         </NavLink>
+        <button className="loginout-buttons" onClick={props.handleLogOut}>
+          Sign out
+        </button>
       </div>
     </div>
   );

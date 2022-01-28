@@ -1,0 +1,62 @@
+.job-manager-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  .job-form-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+  }
+  .job-list-title {
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.job-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 35vh;
+  .job-form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    background-color: #a9a9a9;
+    height: 25vh;
+    .job-form-input {
+      font-size: 32px;
+      margin: 10px;
+    }
+    .save-button-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+      .save-button {
+        border: transparent;
+        border-radius: 5px;
+        font-weight: 700;
+        color: #14213d;
+        justify-self: center;
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+.job-list-sidebar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid white;
+  .job-list-title {
+    font-size: 32px;
+    display: flex;
+  }
+  .jobs-button {
+    font-size: 24px;
+  }
+}

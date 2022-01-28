@@ -1,6 +1,5 @@
 import React from "react";
-
-import Placeholder from "../../../static/assets/images/placeholder.png";
+import { NavLink } from "react-router-dom";
 import Footer from "../footer";
 
 import Healthcare from "../../../static/assets/images/healthcare.jpg";
@@ -45,28 +44,35 @@ export default function () {
         <div className="our-specialties">
           Our Specialties
           <div className="specialties">
-            <div className="specialties-box">
-              <img
-                src={Healthcare}
-                alt="healthcare"
-                style={{ height: "300px" }}
-              />
-              <div className="specialties-text">Healthcare</div>
-            </div>
-            <div className="specialties-box">
-              <img
-                src={Technology}
-                alt="technology"
-                style={{ height: "300px" }}
-              />
-              <div className="specialties-text">Technology</div>
-            </div>
+            <NavLink exact to="/employers" activeClassName="nav-link-active">
+              <div className="specialties-box">
+                <img
+                  src={Healthcare}
+                  alt="healthcare"
+                  style={{ height: "300px" }}
+                />
+                <div className="specialties-text">Healthcare</div>
+              </div>
+            </NavLink>
+
+            <NavLink exact to="/employers" activeClassName="nav-link-active">
+              <div className="specialties-box">
+                <img
+                  src={Technology}
+                  alt="technology"
+                  style={{ height: "300px" }}
+                />
+                <div className="specialties-text">Technology</div>
+              </div>
+            </NavLink>
 
             <div className="specialties-box">
-              <img src={Office} alt="office" style={{ height: "300px" }} />
-              <div className="specialties-text">
-                Office, Clerical & Administrative
-              </div>
+              <NavLink exact to="/employers" activeClassName="nav-link-active">
+                <img src={Office} alt="office" style={{ height: "300px" }} />
+                <div className="specialties-text">
+                  Office, Clerical & Administrative
+                </div>
+              </NavLink>
             </div>
           </div>
         </div>

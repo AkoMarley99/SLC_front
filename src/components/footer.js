@@ -40,14 +40,14 @@ export default function () {
         </div>
 
         <div className="footer-link-wrapper">
-          <NavLink exact to="/services" activeClassName="footer-link-active">
+          <NavLink exact to="/contact" activeClassName="footer-link-active">
             Contact
           </NavLink>
         </div>
       </div>
 
       <div class="copyright-wrapper">
-        &copy; 2022 Stratigist Leadership Ceneter &#124; All rights reserved
+        &copy; 2022 Strategic Leadership Ceneter &#124; All rights reserved
       </div>
     </div>
   );

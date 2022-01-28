@@ -38,15 +38,18 @@ class SingleJob extends React.Component {
       );
 
     return (
-      <div className="App">
-        <h1>Jobs</h1>{" "}
+      <div className="single-job-posting-wrapper">
         {items.map((item) => (
           <ol key={item.id}>
-            Title: {item.title}, Company Name: {item.company}, Description:{" "}
-            {item.description}
-            <Link to="/apply">
-              <button>Apply</button>
-            </Link>
+            <div className="job-post-title">Title: {item.title}</div>
+
+            <div className="job-description">
+              Description: {item.description}
+            </div>
+
+            {/* <Link to="/apply">
+              <button className="apply-button">Apply</button>
+            </Link> */}
           </ol>
         ))}
       </div>
