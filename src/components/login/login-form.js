@@ -37,8 +37,8 @@ export default class LoginForm extends Component {
         .then((data) => {
           console.log(data);
 
-          if (data === "User NOT Verified") {
-            this.setState({ error: "Invalid username or password " });
+          if (data === "User NOT verified") {
+            this.setState({ error: "Invalid username or password" });
           } else {
             this.props.handleSetUser(data);
             Cookies.set("username", this.state.username);
