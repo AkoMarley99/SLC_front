@@ -25,7 +25,7 @@ class App extends Component {
 
     console.log(this.state.selectedFile);
 
-    axios.post("http://127.0.0.1:5000/upload", formData);
+    axios.post("https://slc-api-ajm.herokuapp.com/pload", formData);
   };
 
   fileData = () => {

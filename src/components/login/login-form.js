@@ -25,7 +25,7 @@ export default class LoginForm extends Component {
       this.setState({
         error: "",
       });
-      fetch("http://127.0.0.1:5000/user/verification", {
+      fetch("https://slc-api-ajm.herokuapp.com/user/verification", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({

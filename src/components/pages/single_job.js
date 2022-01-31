@@ -19,7 +19,7 @@ class SingleJob extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://127.0.0.1:5000/job/get")
+    fetch("https://slc-api-ajm.herokuapp.com/job/get")
       .then((res) => res.json())
       .then((json) => {
         this.setState({

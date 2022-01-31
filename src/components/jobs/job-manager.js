@@ -14,7 +14,7 @@ export default class extends Component {
   }
   getjobs() {
     axios
-      .get("http://127.0.0.1:5000/job/get")
+      .get("https://slc-api-ajm.herokuapp.com/job/get")
       .then((response) => {
         this.setState({
           jobs: response.data,
@@ -41,7 +41,7 @@ export default class extends Component {
   }
   handleDeleteClick(data) {
     axios
-      .delete(`http://127.0.0.1:5000/job/delete/${data.id}`, {})
+      .delete(`https://slc-api-ajm.herokuapp.com/job/delete/${data.id}`, {})
       .then((response) => {
         this.setState({
           data: this.state.data.filter((item) => {

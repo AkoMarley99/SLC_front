@@ -37,7 +37,7 @@ export default class JobForm extends Component {
 
   handleSubmit() {
     if (this.state.editMode) {
-      fetch(`http://127.0.0.1:5000/job/update/${this.state.id}`, {
+      fetch(`https://slc-api-ajm.herokuapp.com/job/update/${this.state.id}`, {
         method: "PUT",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({
@@ -50,7 +50,7 @@ export default class JobForm extends Component {
         editMode: false,
       });
     } else {
-      fetch("http://127.0.0.1:5000/job/add", {
+      fetch("https://slc-api-ajm.herokuapp.com/job/add", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({
