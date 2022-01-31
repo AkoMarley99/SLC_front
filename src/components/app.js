@@ -67,6 +67,7 @@ export default class App extends Component {
     this.setState({
       loggedInStatus: "NOT_LOGGED_IN",
     });
+    alert("You have logged out!");
   }
 
   render() {

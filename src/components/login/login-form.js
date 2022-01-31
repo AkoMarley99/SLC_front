@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Cookies from "js-cookie";
+import { useHistory } from "react-router-dom";
 export default class LoginForm extends Component {
   constructor(props) {
     super();
@@ -17,8 +18,12 @@ export default class LoginForm extends Component {
       [event.target.name]: event.target.value,
     });
   }
+  refreshPage() {
+    window.location.reload();
+  }
   handleSubmit(event) {
     event.preventDefault();
+
     if (this.state.username === "" || this.state.password === "") {
       this.setState({ error: "Please fill out all fields" });
     } else {
@@ -43,8 +48,10 @@ export default class LoginForm extends Component {
             this.props.handleSetUser(data);
             Cookies.set("username", this.state.username);
             this.setState({
-              error: "Sign in successful please refresh!",
+              error: "suss",
             });
+            alert("Sign In successful");
+            this.props.history.push("/");
           }
         })
         .catch((error) => {
@@ -87,9 +94,9 @@ export default class LoginForm extends Component {
               onChange={this.handleChange}
             />
           </div>
+
           <button className="signin-button">Sign In</button>
         </form>
-        <p>{this.state.error}</p>
       </div>
     );
   }

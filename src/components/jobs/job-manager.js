@@ -44,7 +44,7 @@ export default class extends Component {
       .delete(`https://slc-api-ajm.herokuapp.com/job/delete/${data.id}`, {})
       .then((response) => {
         this.setState({
-          data: this.state.data.filter((item) => {
+          data: this.state.items.filter((item) => {
             return item.id !== response.id;
           }),
         });

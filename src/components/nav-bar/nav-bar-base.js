@@ -61,9 +61,11 @@ export default function NavBar(props) {
         <NavLink exact to="/login-form" activeClassName="nav-link-active">
           <button className="loginout-buttons">Sign in</button>
         </NavLink>
-        <button className="loginout-buttons" onClick={props.handleLogOut}>
-          Sign out
-        </button>
+        <NavLink exact to="/" activeClassName="nav-link-active">
+          <button className="loginout-buttons" onClick={props.handleLogOut}>
+            Sign out
+          </button>
+        </NavLink>
       </div>
     </div>
   );
