@@ -5,10 +5,9 @@
   .building-teams {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-bottom: 20px;
-
     align-items: center;
     justify-items: center;
+    padding-bottom: 20px;
 
     .building-teams-title {
       display: flex;
@@ -67,9 +66,6 @@
         .specialties-box {
           margin: 10px;
 
-          &:hover {
-            // display: none;
-          }
           .specialties-text {
             display: flex;
             justify-content: center;

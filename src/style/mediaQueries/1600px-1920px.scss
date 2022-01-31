@@ -355,18 +355,17 @@
   }
 
   .job-list-sidebar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    border: 1px solid white;
-    margin-right: 100px;
     .job-list-title {
-      font-size: 32px;
+      font-size: 16px;
       display: flex;
     }
     .jobs-button {
-      font-size: 24px;
+      font-size: 12px;
+      margin: 5px;
+    }
+    .actions {
+      display: flex;
+      flex-direction: row;
     }
   }
   .login-wrapper {

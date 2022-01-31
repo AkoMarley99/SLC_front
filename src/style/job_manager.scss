@@ -51,12 +51,19 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid white;
+  margin-right: 100px;
+  flex-wrap: nowrap;
+
   .job-list-title {
     font-size: 32px;
     display: flex;
+    flex-wrap: nowrap;
   }
   .jobs-button {
     font-size: 24px;
+  }
+  .actions {
+    display: flexf;
+    flex-wrap: none;
   }
 }

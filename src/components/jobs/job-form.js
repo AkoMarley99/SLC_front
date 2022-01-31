@@ -11,7 +11,6 @@ export default class JobForm extends Component {
 
       editMode: false,
     };
-
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -21,7 +20,6 @@ export default class JobForm extends Component {
       [event.target.name]: event.target.value,
     });
   }
-
   componentDidUpdate() {
     if (Object.keys(this.props.jobToEdit).length > 0) {
       const { id, title, description, company } = this.props.jobToEdit;
