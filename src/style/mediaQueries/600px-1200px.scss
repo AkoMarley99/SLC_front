@@ -14,6 +14,9 @@
   .m-collaspible-wrapper {
     padding: 0;
   }
+  .job-manager-wrapper {
+    display: none;
+  }
 
   .m-collaspible {
     margin-left: 100px;
@@ -391,5 +394,8 @@
         margin: 10px;
       }
     }
+  }
+  .job-manager-wrapper {
+    display: none;
   }
 }
